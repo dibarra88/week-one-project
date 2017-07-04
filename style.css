@@ -1,0 +1,308 @@
+/*
+/-------------------FONTS--------------------/
+font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;
+/---------------------------------------------/
+/-------------------COLORS--------------------/
+Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343
+/----------------------------------------------/
+
+*/
+body{
+    font-family: 'Merriweather', serif;
+    line-height: 1.8;
+    margin: 0 auto;
+    height:100%;
+
+}
+.wrapper{
+    background-color:#F2F1E8;
+    width: 100%;
+    margin: 0 auto;
+}
+/*---------------NAVIGATION BAR----------------*/
+#site_header{
+    background-color:#FFFFFF;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(230, 228, 225, 0.6);
+    z-index: 900;
+}
+#logo {
+    flex-basis:40%;
+}
+#logo img{
+    width: 45px;
+}
+#main_nav{
+    text-align: flex-start;
+    flex-basis: 70%;
+}
+#main_nav a{
+    color: #2B2F26;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 18px;
+    transition: color 0.5s ease;
+}
+
+#main_nav a:hover{
+    color: #CD5D67;
+}
+/*----Change font color on nav of current page---*/
+body#home a#home, body#about a#about, body#newsletter a#newsletter {
+    color:#968772;
+}
+/*-------------------------------------------*/
+/*------------MAIN/PAGE CONTENT--------------*/
+main{
+    background-color: #F2F1E8;
+    width: 100%;
+    margin: auto;
+}
+.page_intro{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom:55px;
+}
+.page_intro h1{
+    font-size: 3.7em;
+    font-weight: 400;
+    margin:0;
+}
+.page_intro h2{
+    font-size: 2.1em;
+    font-weight: 100;
+    margin:0;
+}
+#photos{
+    display: block;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+#photos div {
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.product1 {
+    background: url('./img/product-1.jpg');
+    width: 60%;
+    height: 300px;
+    overflow:hidden;
+    background-size:cover;
+}
+.product2{
+    background: url('./img/product-2.jpg');
+    width: 15%;
+    height: 300px;
+    overflow:hidden;
+    background-size:cover;
+}
+.product3{
+    background: url('./img/product-3.jpg');
+    width: 15%;
+    height: 300px;
+    background-size:cover;
+}
+.product4{
+    background: url('./img/product-4.jpg');
+    width: 15%;
+    height: 200px;
+    background-size:cover;
+}
+.product5{
+    background: url('./img/product-5.jpg');
+    width: 15%;
+    height: 200px;
+    background-size:cover;
+}
+.product6{
+    background: url('./img/product-6.jpg');
+    width: 40%;
+    height: 200px;
+    background-size:cover;
+}
+.product7{
+    background: url('./img/product-7.jpg');
+    width: 15%;
+    height: 200px;
+    background-size:cover;
+}
+.photo-label{
+    background:rgb(43,47,38);
+    color: #F2F1E8 ;
+    padding: 0 10px;
+    display: inline-block;
+    position:relative;
+    top:240px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.photo-label.bottom{
+    top:140px;
+    overflow: hidden;
+}
+
+/*----------ABOUT PAGE-----------------------*/
+#birdhouse-img {
+    width: 200px;
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;   
+}
+#birdhouse-img img{
+    width: 85%;
+}
+#inline_link{
+        color:#968772;
+}
+#intro, #bottom{
+    width: 65%;
+    margin: auto;
+}
+#bottom{
+    padding-top: 25px;
+    padding-bottom:45px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+#facilities, #table{
+    width:70%;
+}
+#aside{
+    width: 25%;
+}
+#mission-quote{
+    clear:left;
+    border-left: 1px solid #968772;
+    padding-left: 20px;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: 100;
+    margin:0;
+}
+.background_img{
+    background: url('./img/background-3.jpg') no-repeat;
+    width: 100%;
+    height: 300px;
+    background-image: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.background_label{
+    color: #F2F1E8 ;
+    display: inline-block;
+    text-align: center;
+    font-size: 3.7em;
+    font-weight: 400;
+}
+table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   vertical-align: middle;
+   padding: 5px;
+}
+thead{
+    text-align: center;
+}
+tbody tr:nth-child(odd) {
+    background-color: rgb(242,234,220);
+}
+#aside{
+    padding-left: 20px;
+}
+.aside_img img{
+    padding-top: 62px;
+    width: 60%;
+}
+#aside p{
+    width: 60%;
+    font-size: 0.7em;
+}
+/*-------------------------------------------*/
+/*-------------NEWSLETTER PAGE------------*/
+
+#background_container{
+    background: url('./img/background-2.jpg') no-repeat;
+    width: 100%;
+    height:100vh;
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#subscription_container{
+    background-color: #FFFFFF;
+    width: 40%;
+    padding: 20px 10px;
+    text-align: center;
+}
+input[type=text], input[type=email] {
+    width: 80%;
+    padding: 6px 0;
+    margin: 12px 0;
+    font-size: 1.2em;
+    border: none;
+    border-bottom: 2px solid #968772;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus, input[type=email]:focus {
+    border-bottom: 2px solid #967343;
+}
+input[type=button]{
+    background-color: #968772;
+    border: 1px solid #968772;
+    color: #F2F1E8;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline:none;
+}
+input[type=button]:hover{
+    background-color: #967343;
+    border:1px solid #967343;
+    color:#FFFFFF;
+}
+/*------------------------------------------*/
+/*-----------PAGE FOOTER--------------------*/
+#site_footer {
+    background:rgb(43,47,38);
+    color: #F2F1E8 ;
+    padding: 15px;
+}
